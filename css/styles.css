@@ -246,7 +246,7 @@ body {
 
 .hero-title {
   color: #ffffff;
-  background-color: #2f303a;
+
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -281,6 +281,24 @@ body {
   border-color: transparent;
   padding: 10px 32px;
   min-width: 200px;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/Img-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* footer */
@@ -516,4 +534,17 @@ body {
 .tel {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
