@@ -292,6 +292,7 @@ body {
 
   background-color: #c4c4c4;
   background-image: linear-gradient(
+      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
@@ -370,7 +371,7 @@ body {
   display: block;
   content: " ";
   height: 120px;
-  outline: 1px solid red;
+
   background-color: #f5f4fa;
   /* background-size: contain; */
   background-repeat: no-repeat;
@@ -380,16 +381,16 @@ body {
 }
 
 .icon-antenna::before {
-  background-image: url(../images/svg/antenna\ 1.svg);
+  background-image: url(../images/svg/antenna.svg);
 }
 .icon-clock::before {
-  background-image: url(../images/svg/clock\ 1.svg);
+  background-image: url(../images/svg/clock.svg);
 }
 .icon-diagram::before {
-  background-image: url(../images/svg/diagram\ 1.svg);
+  background-image: url(../images/svg/diagram.svg);
 }
 .icon-astronaut::before {
-  background-image: url(../images/svg/astronaut\ 1.svg);
+  background-image: url(../images/svg/astronaut.svg);
 }
 
 /* .skills .item:not(:last-child) {
@@ -573,4 +574,25 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.icons {
+  display: flex;
+}
+
+.join-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.bottom {
+  display: flex;
+  outline: 1px solid red;
+  align-items: baseline;
 }
