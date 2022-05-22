@@ -288,7 +288,7 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
   background-color: #c4c4c4;
   background-image: linear-gradient(
@@ -364,6 +364,32 @@ body {
 
 .skills .item:last-child {
   margin-right: 0;
+}
+
+.skills .item::before {
+  display: block;
+  content: " ";
+  height: 120px;
+  outline: 1px solid red;
+  background-color: #f5f4fa;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 4px;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/svg/antenna\ 1.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/svg/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/svg/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/svg/astronaut\ 1.svg);
 }
 
 /* .skills .item:not(:last-child) {
