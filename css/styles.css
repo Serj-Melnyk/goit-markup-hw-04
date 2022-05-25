@@ -248,7 +248,7 @@ body {
   letter-spacing: 0.03em;
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 /* hero */
@@ -411,7 +411,7 @@ body {
 }
 
 .skills-title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--title-color);
 
@@ -447,7 +447,7 @@ body {
 
 .btn-item {
   color: var(--title-color);
-  background-color: #ffffff;
+  background: #f5f4fa;
 
   font-family: "Roboto";
   font-style: normal;
@@ -520,8 +520,6 @@ body {
 
 .examples .link:hover,
 .examples .link:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -652,6 +650,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
 
 .social-link {
   display: flex;
@@ -681,7 +682,7 @@ body {
   padding-bottom: 94px;
 }
 
-.client {
+.clients-icon {
   fill: #afb1b8;
 }
 
@@ -709,22 +710,27 @@ body {
   margin-right: 30px;
 }
 
-.clients-item {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 170px;
   height: 92px;
+
   margin-top: 0;
   margin-bottom: 0;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
-.clients-item:hover .client {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
